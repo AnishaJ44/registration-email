@@ -1,0 +1,19 @@
+{
+  "name": "yoga-booking",
+  "version": "1.0.0",
+  "description": "Booking form that emails a confirmation for a yoga session",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14",
+    "dotenv": "^16.4.5"
+  }
+}

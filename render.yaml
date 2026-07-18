@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: yoga-booking
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        sync: false
+      - key: SMTP_SECURE
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: FROM_EMAIL
+        sync: false
+      - key: EVENT_NAME
+        sync: false
+      - key: EVENT_DATE
+        sync: false
+      - key: EVENT_TIME
+        sync: false
+      - key: EVENT_LOCATION
+        sync: false

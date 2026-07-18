@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sunrise Flow Yoga — Reserve Your Spot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="sky" aria-hidden="true">
+    <div class="sun"></div>
+  </div>
+
+  <main class="wrap">
+    <header class="intro">
+      <p class="eyebrow">Sunrise Flow Yoga</p>
+      <h1>Breathe in.<br/>Reserve your mat.</h1>
+      <p class="sub">A slow, sunrise vinyasa session to start the day grounded. Enter your details and we'll send your booking confirmation straight to your inbox.</p>
+    </header>
+
+    <section class="breath" aria-hidden="true">
+      <div class="breath-circle">
+        <span class="breath-word">breathe</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <form id="booking-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Jordan Lee" autocomplete="name" required />
+          <p class="error" id="err-name"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          <p class="error" id="err-email"></p>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" autocomplete="tel" required />
+          <p class="error" id="err-phone"></p>
+        </div>
+
+        <button type="submit" id="submit-btn">
+          <span class="btn-label">Reserve my spot</span>
+        </button>
+
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
